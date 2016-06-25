@@ -1,4 +1,4 @@
-VideoKit
+VideoStreamSDK
 ===
 
 Apple's video streaming solution is very limited - it supports only http streaming and h264 video codec, while being closed-source, rendering the task of streaming video much more difficult than it should be. This framework extends the native solution with the following: 
@@ -6,6 +6,10 @@ Apple's video streaming solution is very limited - it supports only http streami
 - Supports streaming protocols not supported natively 
 - Supports additional codecs not covered by Apple's solution 
 - Can be customized, configured and fine-tuned (such as buffering duration, audio or video raw data)
+
+Free version with ads has same features with the original version except it displays banner and interstitial ads during playback on revenue sharing model. That means the income from advertisements is shared among client and SDK owner with 40% 60% ratio. To do this client needs to provide Google Admob ad unit id's for banner and interstitial ads.
+
+After making money from AppStore, You can upgrade to full version any time
 
 ###You can purchase a commercial license at [VideoStreamSDK](http://videostreamsdk.com/).
 
