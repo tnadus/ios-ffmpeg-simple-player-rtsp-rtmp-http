@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6262F9A116C669E5002FA664 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6262F9A016C669E5002FA664 /* SystemConfiguration.framework */; };
+		626C548216B2899B00010A8E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626C548116B2899B00010A8E /* MediaPlayer.framework */; };
+		62793DB616CFA62C00D7DC67 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62793DB216CFA62C00D7DC67 /* libavcodec.a */; };
+		62793DB816CFA62C00D7DC67 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62793DB316CFA62C00D7DC67 /* libavformat.a */; };
+		62793DBA16CFA62C00D7DC67 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62793DB416CFA62C00D7DC67 /* libavutil.a */; };
+		62793DBC16CFA62C00D7DC67 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62793DB516CFA62C00D7DC67 /* libswscale.a */; };
+		627D6CBD16BDE0EE00E9AB02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E0CA0A16566C0C00E2B4B0 /* Foundation.framework */; };
+		627D6CDD16C301A500E9AB02 /* UINavigationController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 627D6CDC16C301A500E9AB02 /* UINavigationController+Additions.m */; };
+		62BFA8D51691C7030086FC59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BFA8D41691C7020086FC59 /* QuartzCore.framework */; };
+		62BFA8D71691C70F0086FC59 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BFA8D61691C70F0086FC59 /* AudioToolbox.framework */; };
+		62BFA8D91691C71B0086FC59 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62BFA8D81691C71B0086FC59 /* OpenGLES.framework */; };
+		62E0CA0916566C0C00E2B4B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E0CA0816566C0C00E2B4B0 /* UIKit.framework */; };
+		62E0CA0B16566C0C00E2B4B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E0CA0A16566C0C00E2B4B0 /* Foundation.framework */; };
+		62E0CA0D16566C0C00E2B4B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E0CA0C16566C0C00E2B4B0 /* CoreGraphics.framework */; };
+		62E0CA1316566C0C00E2B4B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62E0CA1116566C0C00E2B4B0 /* InfoPlist.strings */; };
+		62E0CA1516566C0C00E2B4B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E0CA1416566C0C00E2B4B0 /* main.m */; };
+		62E0CA1916566C0C00E2B4B0 /* VSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E0CA1816566C0C00E2B4B0 /* VSAppDelegate.m */; };
+		62E0CA3116566DFF00E2B4B0 /* VSChannelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E0CA2F16566DFF00E2B4B0 /* VSChannelListViewController.m */; };
+		62E0CA3216566DFF00E2B4B0 /* VSChannelListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62E0CA3016566DFF00E2B4B0 /* VSChannelListViewController.xib */; };
+		62F9230B16BD2B8400B23FDB /* VSImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62F9230A16BD2B8400B23FDB /* VSImages.bundle */; };
+		63066E451A28E0E90008108D /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63066E431A28E0E90008108D /* Channel.m */; };
+		63066E461A28E0E90008108D /* ChannelsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63066E441A28E0E90008108D /* ChannelsManager.m */; };
+		63066EBE1A3C43900008108D /* cmdutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 63066EBD1A3C43900008108D /* cmdutils.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		63066EBF1A3C43900008108D /* cmdutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 63066EBD1A3C43900008108D /* cmdutils.c */; };
+		63066EC91A42F1EF0008108D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63066EC81A42F1EF0008108D /* Images.xcassets */; };
+		63066ECF1A42F29F0008108D /* EAIntroPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 63066ECC1A42F29F0008108D /* EAIntroPage.m */; };
+		63066ED01A42F29F0008108D /* EAIntroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63066ECE1A42F29F0008108D /* EAIntroView.m */; };
+		63066ED41A432A150008108D /* license-form.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63066ED31A432A150008108D /* license-form.plist */; };
+		637D2C83187818C6002B2B57 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D2C82187818C6002B2B57 /* libswresample.a */; };
+		637D2C84187818C6002B2B57 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D2C82187818C6002B2B57 /* libswresample.a */; };
+		637D2C86187885F2002B2B57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637D2C85187885F2002B2B57 /* AVFoundation.framework */; };
+		A312CD7E1CE7515500D42283 /* VideoStreamCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A312CD7D1CE7515500D42283 /* VideoStreamCore.a */; };
+		A312CD7F1CE7515B00D42283 /* VideoStreamCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A312CD7D1CE7515500D42283 /* VideoStreamCore.a */; };
+		A312CD811CE751FA00D42283 /* VSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A312CD801CE751FA00D42283 /* VSReachability.m */; };
+		A312CD821CE7521200D42283 /* VSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A312CD801CE751FA00D42283 /* VSReachability.m */; };
+		A33F1AD01CD5FFFC00EC5FB5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A33F1ACF1CD5FFFC00EC5FB5 /* CoreBluetooth.framework */; };
+		A3415ABA1C8C7681000D5123 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AB91C8C7681000D5123 /* libiconv.tbd */; };
+		A3415ABC1C8C768D000D5123 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415ABB1C8C768D000D5123 /* libz.tbd */; };
+		A3415ABF1C8C7704000D5123 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415ABD1C8C7704000D5123 /* CoreTelephony.framework */; };
+		A3415AC01C8C7704000D5123 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415ABE1C8C7704000D5123 /* EventKit.framework */; };
+		A3415AC21C8C772F000D5123 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AC11C8C772F000D5123 /* AdSupport.framework */; };
+		A3415AC61C8C7760000D5123 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AC31C8C7760000D5123 /* EventKitUI.framework */; };
+		A3415AC71C8C7760000D5123 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AC41C8C7760000D5123 /* MessageUI.framework */; };
+		A3415AC81C8C7760000D5123 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AC51C8C7760000D5123 /* StoreKit.framework */; };
+		A3415ADD1C8C9623000D5123 /* libInMobi-5.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AD61C8C9623000D5123 /* libInMobi-5.2.0.a */; };
+		A3415AE01C8C979B000D5123 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415ADF1C8C979B000D5123 /* CoreMotion.framework */; };
+		A3415AE21C8C97D2000D5123 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AE11C8C97D2000D5123 /* libsqlite3.tbd */; };
+		A3415AE41C8C9813000D5123 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3415AE31C8C9813000D5123 /* iAd.framework */; };
+		A34A1C931CDF4CCB00604712 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A1C911CDF4CCB00604712 /* libcrypto.a */; };
+		A34A1C941CDF4CCB00604712 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A1C921CDF4CCB00604712 /* libssl.a */; };
+		A34A1C951CDF4D0200604712 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A1C911CDF4CCB00604712 /* libcrypto.a */; };
+		A34A1C961CDF4D0200604712 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A34A1C921CDF4CCB00604712 /* libssl.a */; };
+		A35D1C2A1C8792A4002F90AC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35D1C291C8792A4002F90AC /* CoreMedia.framework */; };
+		A3768B271C8C71B600362E96 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3768B241C8C71B600362E96 /* GoogleMobileAds.framework */; };
+		A3768B281C8C71B600362E96 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3768B241C8C71B600362E96 /* GoogleMobileAds.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		627D6CBA16BDE0EE00E9AB02 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		622F29EC16C53B7F006C4249 /* VSStreamInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSStreamInfoView.h; path = VideoStreamSDK/Gui/VSStreamInfoView.h; sourceTree = SOURCE_ROOT; };
+		6262F99C16C6683B002FA664 /* VSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSReachability.h; path = "VideoStreamSDK/3rd-party/Reachability/VSReachability.h"; sourceTree = SOURCE_ROOT; };
+		6262F9A016C669E5002FA664 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		626C548116B2899B00010A8E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		62793DB216CFA62C00D7DC67 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "VideoStreamSDK/3rd-party/ffmpeg/lib/libavcodec.a"; sourceTree = SOURCE_ROOT; };
+		62793DB316CFA62C00D7DC67 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "VideoStreamSDK/3rd-party/ffmpeg/lib/libavformat.a"; sourceTree = SOURCE_ROOT; };
+		62793DB416CFA62C00D7DC67 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "VideoStreamSDK/3rd-party/ffmpeg/lib/libavutil.a"; sourceTree = SOURCE_ROOT; };
+		62793DB516CFA62C00D7DC67 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "VideoStreamSDK/3rd-party/ffmpeg/lib/libswscale.a"; sourceTree = SOURCE_ROOT; };
+		627D6CBC16BDE0EE00E9AB02 /* VideoStreamSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = VideoStreamSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		627D6CC016BDE0EE00E9AB02 /* VideoStreamSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoStreamSDK-Prefix.pch"; sourceTree = "<group>"; };
+		627D6CDB16C301A500E9AB02 /* UINavigationController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Additions.h"; path = "VideoStream/UINavigationController+Additions.h"; sourceTree = SOURCE_ROOT; };
+		627D6CDC16C301A500E9AB02 /* UINavigationController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = "UINavigationController+Additions.m"; path = "VideoStream/UINavigationController+Additions.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		62BFA8D41691C7020086FC59 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		62BFA8D61691C70F0086FC59 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		62BFA8D81691C71B0086FC59 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		62E0CA0416566C0C00E2B4B0 /* VideoStreamSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoStreamSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E0CA0816566C0C00E2B4B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		62E0CA0A16566C0C00E2B4B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62E0CA0C16566C0C00E2B4B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		62E0CA1016566C0C00E2B4B0 /* VideoStream-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "VideoStream-Info.plist"; path = "VideoStream/VideoStream-Info.plist"; sourceTree = SOURCE_ROOT; };
+		62E0CA1216566C0C00E2B4B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		62E0CA1416566C0C00E2B4B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = VideoStream/main.m; sourceTree = SOURCE_ROOT; };
+		62E0CA1616566C0C00E2B4B0 /* VideoStreamSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VideoStreamSample-Prefix.pch"; path = "VideoStream/VideoStreamSample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		62E0CA1716566C0C00E2B4B0 /* VSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VSAppDelegate.h; path = VideoStream/VSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		62E0CA1816566C0C00E2B4B0 /* VSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = VSAppDelegate.m; path = VideoStream/VSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		62E0CA2E16566DFF00E2B4B0 /* VSChannelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSChannelListViewController.h; path = VideoStream/VSChannelListViewController.h; sourceTree = SOURCE_ROOT; };
+		62E0CA2F16566DFF00E2B4B0 /* VSChannelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = VSChannelListViewController.m; path = VideoStream/VSChannelListViewController.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		62E0CA3016566DFF00E2B4B0 /* VSChannelListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VSChannelListViewController.xib; path = VideoStream/VSChannelListViewController.xib; sourceTree = SOURCE_ROOT; };
+		62F922A117575080009586AC /* VSGLES2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VSGLES2View.h; path = VideoStreamSDK/Gui/VSGLES2View.h; sourceTree = SOURCE_ROOT; };
+		62F9230A16BD2B8400B23FDB /* VSImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VSImages.bundle; sourceTree = "<group>"; };
+		63066E411A28E0E90008108D /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		63066E421A28E0E90008108D /* ChannelsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelsManager.h; sourceTree = "<group>"; };
+		63066E431A28E0E90008108D /* Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		63066E441A28E0E90008108D /* ChannelsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelsManager.m; sourceTree = "<group>"; };
+		63066E951A3C3FCB0008108D /* VSAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAudioDecoder.h; sourceTree = "<group>"; };
+		63066E971A3C3FCB0008108D /* VSAVDecodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAVDecodeManager.h; sourceTree = "<group>"; };
+		63066E991A3C3FCB0008108D /* VSDecodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDecodeManager.h; sourceTree = "<group>"; };
+		63066E9B1A3C3FCB0008108D /* VSDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSDecoder.h; sourceTree = "<group>"; };
+		63066E9F1A3C3FCB0008108D /* VSPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPacket.h; sourceTree = "<group>"; };
+		63066EA11A3C3FCB0008108D /* VSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSQueue.h; sourceTree = "<group>"; };
+		63066EA51A3C3FCB0008108D /* VSVideoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVideoDecoder.h; sourceTree = "<group>"; };
+		63066EBD1A3C43900008108D /* cmdutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmdutils.c; sourceTree = "<group>"; };
+		63066EC01A3C5D6A0008108D /* VSPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPlayerViewController.h; sourceTree = "<group>"; };
+		63066EC41A42C8760008108D /* VSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSManager.h; sourceTree = "<group>"; };
+		63066EC81A42F1EF0008108D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63066ECB1A42F29F0008108D /* EAIntroPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroPage.h; sourceTree = "<group>"; };
+		63066ECC1A42F29F0008108D /* EAIntroPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroPage.m; sourceTree = "<group>"; };
+		63066ECD1A42F29F0008108D /* EAIntroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAIntroView.h; sourceTree = "<group>"; };
+		63066ECE1A42F29F0008108D /* EAIntroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAIntroView.m; sourceTree = "<group>"; };
+		63066ED31A432A150008108D /* license-form.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "license-form.plist"; sourceTree = "<group>"; };
+		637D2C82187818C6002B2B57 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "VideoStreamSDK/3rd-party/ffmpeg/lib/libswresample.a"; sourceTree = SOURCE_ROOT; };
+		637D2C85187885F2002B2B57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7A11A0361C0F75D3006BFBEC /* VSClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSClock.h; sourceTree = "<group>"; };
+		7A11A0391C0F75F1006BFBEC /* VSClockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSClockManager.h; sourceTree = "<group>"; };
+		A312CD7D1CE7515500D42283 /* VideoStreamCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = VideoStreamCore.a; sourceTree = "<group>"; };
+		A312CD801CE751FA00D42283 /* VSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSReachability.m; sourceTree = "<group>"; };
+		A33AF7F51C957FEF00B011F2 /* VSPlayerViewControllerWithAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSPlayerViewControllerWithAd.h; sourceTree = "<group>"; };
+		A33F1ACF1CD5FFFC00EC5FB5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A3415AB91C8C7681000D5123 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A3415ABB1C8C768D000D5123 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A3415ABD1C8C7704000D5123 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A3415ABE1C8C7704000D5123 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A3415AC11C8C772F000D5123 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A3415AC31C8C7760000D5123 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A3415AC41C8C7760000D5123 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		A3415AC51C8C7760000D5123 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A3415ACA1C8C9623000D5123 /* GADInMobiExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADInMobiExtras.h; path = AdMob/adapters/GADInMobiExtras.h; sourceTree = "<group>"; };
+		A3415ACC1C8C9623000D5123 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMAdNetworkAdapterProtocol.h; path = AdMob/adapters/GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		A3415ACD1C8C9623000D5123 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMAdNetworkConnectorProtocol.h; path = AdMob/adapters/GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		A3415ACE1C8C9623000D5123 /* GADMediationAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMediationAdRequest.h; path = AdMob/adapters/GADMediationAdRequest.h; sourceTree = "<group>"; };
+		A3415ACF1C8C9623000D5123 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMEnums.h; path = AdMob/adapters/GADMEnums.h; sourceTree = "<group>"; };
+		A3415AD01C8C9623000D5123 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; path = AdMob/adapters/GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		A3415AD11C8C9623000D5123 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; path = AdMob/adapters/GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		A3415AD61C8C9623000D5123 /* libInMobi-5.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libInMobi-5.2.0.a"; path = "AdMob/adapters/libInMobi-5.2.0.a"; sourceTree = "<group>"; };
+		A3415ADF1C8C979B000D5123 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A3415AE11C8C97D2000D5123 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A3415AE31C8C9813000D5123 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A34A1C911CDF4CCB00604712 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		A34A1C921CDF4CCB00604712 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		A35D1C291C8792A4002F90AC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A3768B241C8C71B600362E96 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = AdMob/Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		A3A428181CCD0E0C00BF6777 /* VSVideoFrameRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVideoFrameRGB.h; sourceTree = "<group>"; };
+		A3A4281A1CCD0E0C00BF6777 /* VSVideoFrameYUV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVideoFrameYUV.h; sourceTree = "<group>"; };
+		A3A4281F1CCD0EF200BF6777 /* VSVideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSVideoFrame.h; sourceTree = "<group>"; };
+		A3A428221CCD0EFF00BF6777 /* VSColorPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSColorPlane.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627D6CB916BDE0EE00E9AB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34A1C941CDF4CCB00604712 /* libssl.a in Frameworks */,
+				637D2C84187818C6002B2B57 /* libswresample.a in Frameworks */,
+				A312CD7E1CE7515500D42283 /* VideoStreamCore.a in Frameworks */,
+				A3768B281C8C71B600362E96 /* GoogleMobileAds.framework in Frameworks */,
+				A34A1C931CDF4CCB00604712 /* libcrypto.a in Frameworks */,
+				627D6CBD16BDE0EE00E9AB02 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E0CA0116566C0C00E2B4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3415AE21C8C97D2000D5123 /* libsqlite3.tbd in Frameworks */,
+				A3415ABC1C8C768D000D5123 /* libz.tbd in Frameworks */,
+				A3415ABA1C8C7681000D5123 /* libiconv.tbd in Frameworks */,
+				62BFA8D51691C7030086FC59 /* QuartzCore.framework in Frameworks */,
+				6262F9A116C669E5002FA664 /* SystemConfiguration.framework in Frameworks */,
+				626C548216B2899B00010A8E /* MediaPlayer.framework in Frameworks */,
+				62BFA8D91691C71B0086FC59 /* OpenGLES.framework in Frameworks */,
+				62BFA8D71691C70F0086FC59 /* AudioToolbox.framework in Frameworks */,
+				A3415AE41C8C9813000D5123 /* iAd.framework in Frameworks */,
+				A3415AC21C8C772F000D5123 /* AdSupport.framework in Frameworks */,
+				A3415AE01C8C979B000D5123 /* CoreMotion.framework in Frameworks */,
+				A3415AC61C8C7760000D5123 /* EventKitUI.framework in Frameworks */,
+				A3415AC71C8C7760000D5123 /* MessageUI.framework in Frameworks */,
+				A3415AC81C8C7760000D5123 /* StoreKit.framework in Frameworks */,
+				A3415ABF1C8C7704000D5123 /* CoreTelephony.framework in Frameworks */,
+				A33F1AD01CD5FFFC00EC5FB5 /* CoreBluetooth.framework in Frameworks */,
+				A3415AC01C8C7704000D5123 /* EventKit.framework in Frameworks */,
+				A35D1C2A1C8792A4002F90AC /* CoreMedia.framework in Frameworks */,
+				637D2C86187885F2002B2B57 /* AVFoundation.framework in Frameworks */,
+				62E0CA0916566C0C00E2B4B0 /* UIKit.framework in Frameworks */,
+				62E0CA0B16566C0C00E2B4B0 /* Foundation.framework in Frameworks */,
+				62E0CA0D16566C0C00E2B4B0 /* CoreGraphics.framework in Frameworks */,
+				A3768B271C8C71B600362E96 /* GoogleMobileAds.framework in Frameworks */,
+				A312CD7F1CE7515B00D42283 /* VideoStreamCore.a in Frameworks */,
+				637D2C83187818C6002B2B57 /* libswresample.a in Frameworks */,
+				62793DBC16CFA62C00D7DC67 /* libswscale.a in Frameworks */,
+				62793DB616CFA62C00D7DC67 /* libavcodec.a in Frameworks */,
+				62793DB816CFA62C00D7DC67 /* libavformat.a in Frameworks */,
+				62793DBA16CFA62C00D7DC67 /* libavutil.a in Frameworks */,
+				A34A1C951CDF4D0200604712 /* libcrypto.a in Frameworks */,
+				A34A1C961CDF4D0200604712 /* libssl.a in Frameworks */,
+				A3415ADD1C8C9623000D5123 /* libInMobi-5.2.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62167F2916B6899F000F0EAE /* 3rd-party */ = {
+			isa = PBXGroup;
+			children = (
+				A34A1C421CDF4CCB00604712 /* openSSL */,
+				63066EBD1A3C43900008108D /* cmdutils.c */,
+				6262F99B16C6683B002FA664 /* Reachability */,
+				62167F2A16B6899F000F0EAE /* ffmpeg */,
+			);
+			name = "3rd-party";
+			path = "VideoStreamSDK/3rd-party";
+			sourceTree = SOURCE_ROOT;
+		};
+		62167F2A16B6899F000F0EAE /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				62793DB116CFA62C00D7DC67 /* lib */,
+			);
+			name = ffmpeg;
+			path = "VideoStreamSDK/3rd-party/ffmpeg";
+			sourceTree = SOURCE_ROOT;
+		};
+		6262F99B16C6683B002FA664 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				6262F99C16C6683B002FA664 /* VSReachability.h */,
+				A312CD801CE751FA00D42283 /* VSReachability.m */,
+			);
+			name = Reachability;
+			path = "VideoStreamSDK/3rd-party/Reachability";
+			sourceTree = SOURCE_ROOT;
+		};
+		62679D6016A96CEF00B9AA47 /* VideoStreamSDK */ = {
+			isa = PBXGroup;
+			children = (
+				62167F2916B6899F000F0EAE /* 3rd-party */,
+				63066E941A3C3FCB0008108D /* Core */,
+				62679D6F16A96CEF00B9AA47 /* Gui */,
+				62679D7216A96CEF00B9AA47 /* ViewController */,
+				626C546D16B18E1B00010A8E /* Supporting Files */,
+			);
+			path = VideoStreamSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		62679D6F16A96CEF00B9AA47 /* Gui */ = {
+			isa = PBXGroup;
+			children = (
+				62F922A117575080009586AC /* VSGLES2View.h */,
+				622F29EC16C53B7F006C4249 /* VSStreamInfoView.h */,
+			);
+			name = Gui;
+			path = VideoStreamSDK/Gui;
+			sourceTree = SOURCE_ROOT;
+		};
+		62679D7216A96CEF00B9AA47 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63066EC01A3C5D6A0008108D /* VSPlayerViewController.h */,
+				A33AF7F51C957FEF00B011F2 /* VSPlayerViewControllerWithAd.h */,
+			);
+			name = ViewController;
+			path = VideoStreamSDK/ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		626C546D16B18E1B00010A8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63066ED31A432A150008108D /* license-form.plist */,
+				627D6CC016BDE0EE00E9AB02 /* VideoStreamSDK-Prefix.pch */,
+				62F9230A16BD2B8400B23FDB /* VSImages.bundle */,
+			);
+			name = "Supporting Files";
+			path = VideoStreamSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		62793DB116CFA62C00D7DC67 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				637D2C82187818C6002B2B57 /* libswresample.a */,
+				62793DB216CFA62C00D7DC67 /* libavcodec.a */,
+				62793DB316CFA62C00D7DC67 /* libavformat.a */,
+				62793DB416CFA62C00D7DC67 /* libavutil.a */,
+				62793DB516CFA62C00D7DC67 /* libswscale.a */,
+			);
+			name = lib;
+			path = "VideoStreamSDK/3rd-party/ffmpeg/lib";
+			sourceTree = SOURCE_ROOT;
+		};
+		62E0C9F916566C0C00E2B4B0 = {
+			isa = PBXGroup;
+			children = (
+				A35D1C141C87812A002F90AC /* Admob */,
+				62679D6016A96CEF00B9AA47 /* VideoStreamSDK */,
+				62E0CA0E16566C0C00E2B4B0 /* VideoStreamSample */,
+				62E0CA0716566C0C00E2B4B0 /* Frameworks */,
+				62E0CA0516566C0C00E2B4B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62E0CA0516566C0C00E2B4B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62E0CA0416566C0C00E2B4B0 /* VideoStreamSample.app */,
+				627D6CBC16BDE0EE00E9AB02 /* VideoStreamSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62E0CA0716566C0C00E2B4B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A33F1ACF1CD5FFFC00EC5FB5 /* CoreBluetooth.framework */,
+				A3415AE11C8C97D2000D5123 /* libsqlite3.tbd */,
+				A3415ABB1C8C768D000D5123 /* libz.tbd */,
+				A3415AB91C8C7681000D5123 /* libiconv.tbd */,
+				A3415AE31C8C9813000D5123 /* iAd.framework */,
+				A3415ADF1C8C979B000D5123 /* CoreMotion.framework */,
+				A3415AC31C8C7760000D5123 /* EventKitUI.framework */,
+				A3415AC41C8C7760000D5123 /* MessageUI.framework */,
+				A3415AC51C8C7760000D5123 /* StoreKit.framework */,
+				A3415AC11C8C772F000D5123 /* AdSupport.framework */,
+				A3415ABD1C8C7704000D5123 /* CoreTelephony.framework */,
+				A3415ABE1C8C7704000D5123 /* EventKit.framework */,
+				A35D1C291C8792A4002F90AC /* CoreMedia.framework */,
+				637D2C85187885F2002B2B57 /* AVFoundation.framework */,
+				6262F9A016C669E5002FA664 /* SystemConfiguration.framework */,
+				626C548116B2899B00010A8E /* MediaPlayer.framework */,
+				62BFA8D81691C71B0086FC59 /* OpenGLES.framework */,
+				62BFA8D61691C70F0086FC59 /* AudioToolbox.framework */,
+				62BFA8D41691C7020086FC59 /* QuartzCore.framework */,
+				62E0CA0816566C0C00E2B4B0 /* UIKit.framework */,
+				62E0CA0A16566C0C00E2B4B0 /* Foundation.framework */,
+				62E0CA0C16566C0C00E2B4B0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62E0CA0E16566C0C00E2B4B0 /* VideoStreamSample */ = {
+			isa = PBXGroup;
+			children = (
+				63066ECA1A42F29F0008108D /* EAIntroView */,
+				63066E6B1A3353870008108D /* AppDelegate */,
+				63066E6A1A3351D00008108D /* Helpers */,
+				63066E401A28E0CC0008108D /* Channels */,
+				62E0CA2E16566DFF00E2B4B0 /* VSChannelListViewController.h */,
+				62E0CA2F16566DFF00E2B4B0 /* VSChannelListViewController.m */,
+				62E0CA3016566DFF00E2B4B0 /* VSChannelListViewController.xib */,
+				62E0CA0F16566C0C00E2B4B0 /* Supporting Files */,
+			);
+			name = VideoStreamSample;
+			path = VideoStream;
+			sourceTree = "<group>";
+		};
+		62E0CA0F16566C0C00E2B4B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63066EC81A42F1EF0008108D /* Images.xcassets */,
+				62E0CA1016566C0C00E2B4B0 /* VideoStream-Info.plist */,
+				62E0CA1116566C0C00E2B4B0 /* InfoPlist.strings */,
+				62E0CA1416566C0C00E2B4B0 /* main.m */,
+				62E0CA1616566C0C00E2B4B0 /* VideoStreamSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = VideoStream;
+			sourceTree = SOURCE_ROOT;
+		};
+		63066E401A28E0CC0008108D /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				63066E411A28E0E90008108D /* Channel.h */,
+				63066E431A28E0E90008108D /* Channel.m */,
+				63066E421A28E0E90008108D /* ChannelsManager.h */,
+				63066E441A28E0E90008108D /* ChannelsManager.m */,
+			);
+			name = Channels;
+			sourceTree = "<group>";
+		};
+		63066E6A1A3351D00008108D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				627D6CDB16C301A500E9AB02 /* UINavigationController+Additions.h */,
+				627D6CDC16C301A500E9AB02 /* UINavigationController+Additions.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		63066E6B1A3353870008108D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				62E0CA1716566C0C00E2B4B0 /* VSAppDelegate.h */,
+				62E0CA1816566C0C00E2B4B0 /* VSAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		63066E941A3C3FCB0008108D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A3A428151CCD0DD800BF6777 /* VSVideoFrame */,
+				7A11A0361C0F75D3006BFBEC /* VSClock.h */,
+				7A11A0391C0F75F1006BFBEC /* VSClockManager.h */,
+				63066EA11A3C3FCB0008108D /* VSQueue.h */,
+				63066E9B1A3C3FCB0008108D /* VSDecoder.h */,
+				63066E951A3C3FCB0008108D /* VSAudioDecoder.h */,
+				63066EA51A3C3FCB0008108D /* VSVideoDecoder.h */,
+				63066EC41A42C8760008108D /* VSManager.h */,
+				63066E991A3C3FCB0008108D /* VSDecodeManager.h */,
+				63066E971A3C3FCB0008108D /* VSAVDecodeManager.h */,
+				63066E9F1A3C3FCB0008108D /* VSPacket.h */,
+				A3A4281F1CCD0EF200BF6777 /* VSVideoFrame.h */,
+				A312CD7D1CE7515500D42283 /* VideoStreamCore.a */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		63066ECA1A42F29F0008108D /* EAIntroView */ = {
+			isa = PBXGroup;
+			children = (
+				63066ECB1A42F29F0008108D /* EAIntroPage.h */,
+				63066ECC1A42F29F0008108D /* EAIntroPage.m */,
+				63066ECD1A42F29F0008108D /* EAIntroView.h */,
+				63066ECE1A42F29F0008108D /* EAIntroView.m */,
+			);
+			path = EAIntroView;
+			sourceTree = "<group>";
+		};
+		A3415AC91C8C9609000D5123 /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				A3415ACA1C8C9623000D5123 /* GADInMobiExtras.h */,
+				A3415ACC1C8C9623000D5123 /* GADMAdNetworkAdapterProtocol.h */,
+				A3415ACD1C8C9623000D5123 /* GADMAdNetworkConnectorProtocol.h */,
+				A3415ACE1C8C9623000D5123 /* GADMediationAdRequest.h */,
+				A3415ACF1C8C9623000D5123 /* GADMEnums.h */,
+				A3415AD01C8C9623000D5123 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				A3415AD11C8C9623000D5123 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+				A3415AD61C8C9623000D5123 /* libInMobi-5.2.0.a */,
+			);
+			name = adapters;
+			sourceTree = "<group>";
+		};
+		A34A1C421CDF4CCB00604712 /* openSSL */ = {
+			isa = PBXGroup;
+			children = (
+				A34A1C901CDF4CCB00604712 /* lib */,
+			);
+			path = openSSL;
+			sourceTree = "<group>";
+		};
+		A34A1C901CDF4CCB00604712 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A34A1C911CDF4CCB00604712 /* libcrypto.a */,
+				A34A1C921CDF4CCB00604712 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A35D1C141C87812A002F90AC /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				A3415AC91C8C9609000D5123 /* adapters */,
+				A35D1C221C878B34002F90AC /* Framework */,
+			);
+			name = Admob;
+			sourceTree = "<group>";
+		};
+		A35D1C221C878B34002F90AC /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				A3768B241C8C71B600362E96 /* GoogleMobileAds.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		A3A428151CCD0DD800BF6777 /* VSVideoFrame */ = {
+			isa = PBXGroup;
+			children = (
+				A3A428221CCD0EFF00BF6777 /* VSColorPlane.h */,
+				A3A428181CCD0E0C00BF6777 /* VSVideoFrameRGB.h */,
+				A3A4281A1CCD0E0C00BF6777 /* VSVideoFrameYUV.h */,
+			);
+			name = VSVideoFrame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627D6CBB16BDE0EE00E9AB02 /* VideoStreamSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627D6CC516BDE0EE00E9AB02 /* Build configuration list for PBXNativeTarget "VideoStreamSDK" */;
+			buildPhases = (
+				627D6CB816BDE0EE00E9AB02 /* Sources */,
+				627D6CB916BDE0EE00E9AB02 /* Frameworks */,
+				627D6CBA16BDE0EE00E9AB02 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoStreamSDK;
+			productName = VideoStreamSDK;
+			productReference = 627D6CBC16BDE0EE00E9AB02 /* VideoStreamSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		62E0CA0316566C0C00E2B4B0 /* VideoStreamSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62E0CA2216566C0C00E2B4B0 /* Build configuration list for PBXNativeTarget "VideoStreamSample" */;
+			buildPhases = (
+				62E0CA0016566C0C00E2B4B0 /* Sources */,
+				62E0CA0116566C0C00E2B4B0 /* Frameworks */,
+				62E0CA0216566C0C00E2B4B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoStreamSample;
+			productName = VideoStream;
+			productReference = 62E0CA0416566C0C00E2B4B0 /* VideoStreamSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62E0C9FB16566C0C00E2B4B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VS;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = MobileTR;
+			};
+			buildConfigurationList = 62E0C9FE16566C0C00E2B4B0 /* Build configuration list for PBXProject "VideoStream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 62E0C9F916566C0C00E2B4B0;
+			productRefGroup = 62E0CA0516566C0C00E2B4B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62E0CA0316566C0C00E2B4B0 /* VideoStreamSample */,
+				627D6CBB16BDE0EE00E9AB02 /* VideoStreamSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62E0CA0216566C0C00E2B4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63066ED41A432A150008108D /* license-form.plist in Resources */,
+				62E0CA1316566C0C00E2B4B0 /* InfoPlist.strings in Resources */,
+				62E0CA3216566DFF00E2B4B0 /* VSChannelListViewController.xib in Resources */,
+				63066EC91A42F1EF0008108D /* Images.xcassets in Resources */,
+				62F9230B16BD2B8400B23FDB /* VSImages.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627D6CB816BDE0EE00E9AB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63066EBF1A3C43900008108D /* cmdutils.c in Sources */,
+				A312CD811CE751FA00D42283 /* VSReachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62E0CA0016566C0C00E2B4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E0CA1516566C0C00E2B4B0 /* main.m in Sources */,
+				62E0CA1916566C0C00E2B4B0 /* VSAppDelegate.m in Sources */,
+				62E0CA3116566DFF00E2B4B0 /* VSChannelListViewController.m in Sources */,
+				A312CD821CE7521200D42283 /* VSReachability.m in Sources */,
+				63066E461A28E0E90008108D /* ChannelsManager.m in Sources */,
+				627D6CDD16C301A500E9AB02 /* UINavigationController+Additions.m in Sources */,
+				63066EBE1A3C43900008108D /* cmdutils.c in Sources */,
+				63066ECF1A42F29F0008108D /* EAIntroPage.m in Sources */,
+				63066E451A28E0E90008108D /* Channel.m in Sources */,
+				63066ED01A42F29F0008108D /* EAIntroView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62E0CA1116566C0C00E2B4B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62E0CA1216566C0C00E2B4B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			path = VideoStream;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		627D6CC616BDE0EE00E9AB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DSTROOT = /tmp/VideoStreamSDK.dst;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AdMob/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoStreamSDK/VideoStreamSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./VideoStreamSDK/3rd-party/ffmpeg/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/ffmpeg/lib/",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/openSSL/lib",
+					"$(PROJECT_DIR)/VideoStreamSDK/Core",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		627D6CC716BDE0EE00E9AB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DSTROOT = /tmp/VideoStreamSDK.dst;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AdMob/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoStreamSDK/VideoStreamSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = "./VideoStreamSDK/3rd-party/ffmpeg/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/ffmpeg/lib/",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/openSSL/lib",
+					"$(PROJECT_DIR)/VideoStreamSDK/Core",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		62E0CA2016566C0C00E2B4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62E0CA2116566C0C00E2B4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62E0CA2316566C0C00E2B4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdMob/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoStream/VideoStreamSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/ffmpeg/include/",
+					./AdMob/Classes/,
+				);
+				INFOPLIST_FILE = "VideoStream/VideoStream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/openSSL/lib/",
+					"./VideoStreamSDK/3rd-party/ffmpeg/lib/",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/ffmpeg/lib",
+					"$(PROJECT_DIR)/AdMob/adapters",
+					"$(PROJECT_DIR)/VideoStreamSDK/Core",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/openSSL/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videostreamsdk.vssample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b6e08479-e404-49af-927b-da47e99dd876";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		62E0CA2416566C0C00E2B4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdMob/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoStream/VideoStreamSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/ffmpeg/include/",
+					./AdMob/Classes/,
+				);
+				INFOPLIST_FILE = "VideoStream/VideoStream-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"./VideoStreamSDK/3rd-party/openSSL/lib/",
+					"./VideoStreamSDK/3rd-party/ffmpeg/lib/",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/ffmpeg/lib",
+					"$(PROJECT_DIR)/AdMob/adapters",
+					"$(PROJECT_DIR)/VideoStreamSDK/Core",
+					"$(PROJECT_DIR)/VideoStreamSDK/3rd-party/openSSL/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videostreamsdk.vssample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b6e08479-e404-49af-927b-da47e99dd876";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627D6CC516BDE0EE00E9AB02 /* Build configuration list for PBXNativeTarget "VideoStreamSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627D6CC616BDE0EE00E9AB02 /* Debug */,
+				627D6CC716BDE0EE00E9AB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E0C9FE16566C0C00E2B4B0 /* Build configuration list for PBXProject "VideoStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E0CA2016566C0C00E2B4B0 /* Debug */,
+				62E0CA2116566C0C00E2B4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62E0CA2216566C0C00E2B4B0 /* Build configuration list for PBXNativeTarget "VideoStreamSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62E0CA2316566C0C00E2B4B0 /* Debug */,
+				62E0CA2416566C0C00E2B4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62E0C9FB16566C0C00E2B4B0 /* Project object */;
+}

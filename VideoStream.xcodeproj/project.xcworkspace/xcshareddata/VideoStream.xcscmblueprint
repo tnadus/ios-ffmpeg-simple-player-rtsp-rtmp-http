@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DFF68E636EBE3FA1617472D4F725AAF3499E9DB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7D18B24CD4E988F03B52F86F43DE2F4BCA789E1B" : 0,
+    "DFF68E636EBE3FA1617472D4F725AAF3499E9DB3" : 0,
+    "9219500170ED2B7E8E645DCE88FAF9D19767CF24" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B828CF4F-0F8B-4AB8-AE17-DEBF50C152F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7D18B24CD4E988F03B52F86F43DE2F4BCA789E1B" : "videostreamsdk\/",
+    "DFF68E636EBE3FA1617472D4F725AAF3499E9DB3" : "VideoStream\/",
+    "9219500170ED2B7E8E645DCE88FAF9D19767CF24" : "videostreamsdk\/AdMob\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoStream",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoStream.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/tnadus\/videostreamsdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7D18B24CD4E988F03B52F86F43DE2F4BCA789E1B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:tnadus\/admob.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9219500170ED2B7E8E645DCE88FAF9D19767CF24"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/elmadigital.net\/~\/git\/vs-ios-ad.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFF68E636EBE3FA1617472D4F725AAF3499E9DB3"
+    }
+  ]
+}
